@@ -1,35 +1,8 @@
-// export let movie = [
-//     {
-//       id: 1,
-//       title: "The Shawshank Redemption",
-//       image: " "
-//     },
-//     {
-//       id: 2,
-//       title: "The Godfather",
-//       image: " "
-//     },
-//     {
-//       id: 3,
-//       title: "The Dark Knight",
-//       image: " "
-//     },
-//     {
-//       id: 4,
-//       title: "Pulp Fiction",
-//       image: " "
-//     },
-//     {
-//       id: 5,
-//       title: "The Lord of the Rings: The Fellowship of the Ring",
-//       image: " "
-//     }
-//   ];
-//
+
 export let movie = [
   {
     id: 1,
-    name: "The Shawshank Redemption",
+    name: "Titanic",
     image: "movie1.jpg",
   },
   {
@@ -54,7 +27,7 @@ export let movie = [
   },
   {
     id: 6,
-    name: "Forest Gump",
+    name: "Fight Club",
     image: "movie6.jpg",
   },
   {
@@ -77,19 +50,19 @@ export let movie = [
     name: "Harry Potter",
     image: "movie10.jpg",
   },
-  // {
-  //   id: 11,
-  //   title: "Titanic",
-  //   image: "movie11.jpg"
-  // },
-  // {
-  //   id: 12,
-  //   title: "Inception",
-  //   image: "movie12.jpg"
-  // },
-  // {
-  //   id: 13,
-  //   title: "Saw",
-  //   image: "movie13.jpg"
-  // },
+  {
+    id: 11,
+    title: "Laland",
+    image: "movie11.jpg",
+  },
+  {
+    id: 12,
+    title: "Her",
+    image: "movie12.jpg",
+  },
+  {
+    id: 13,
+    title: "A Clockwork Orange",
+    image: "movie13.jpg",
+  },
 ];
