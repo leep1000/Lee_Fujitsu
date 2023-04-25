@@ -9,7 +9,7 @@ export let places = [
     id: 2,
     name: "the streets of Rio de Janeiro, Brazil during carinval",
     description: "A vibrant city with stunning beaches, mountains, and a rich cultural history.",
-    image ""
+    // image: ""
   },
   {
     id: 3,

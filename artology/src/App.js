@@ -3,7 +3,10 @@ import { useState } from "react";
 import React from "react";
 import Navbar from "./components/Navbar/Navbar";
 import RandomItem from "./components/RandomItem/index";
-// import adjectives from "./"
+import { adjectives } from "./RandomItem/Adjective";
+import { movie } from "./RandomItem/Movie";
+import { places } from "./RandomItem/Place";
+import { questions } from "./RandomItem/Question";
 
 function App() {
   const [item1, setItem1] = useState({});
@@ -34,6 +37,8 @@ function App() {
     return randomItem;
   }
     
+
+
   return (
     <div className="App">
       <header className="App-header">
@@ -41,9 +46,9 @@ function App() {
       </header>
       <main>
         <div className="item-container">
-          <RandomItem item={item1} getRandomItem={() => getRandomItem1/*(adjectives)*/} />
-          <RandomItem item={item2} getRandomItem={() => getRandomItem2} />
-          <RandomItem item={item3} getRandomItem={() => getRandomItem3} />
+          <RandomItem item={item1} getRandomItem={() => getRandomItem1({ adjectives })} />
+          <RandomItem item={item2} getRandomItem={() => getRandomItem2({ movie})} />
+          <RandomItem item={item3} getRandomItem={() => getRandomItem3( {places})} />
         </div>
       </main>
     </div>
