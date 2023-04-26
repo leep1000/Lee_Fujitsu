@@ -17,13 +17,13 @@
 
 .App-header {
   background-color: var(--white);
-  min-height: 100vh;
+ 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color:var(--white);
 }
 
 .App-link {
@@ -38,5 +38,5 @@
   width: 80%;
   margin: 0 auto;
   padding: 0 0 50px 0;
-  background-color: #f5f5f5;
+  background-color: var(--white);
 }

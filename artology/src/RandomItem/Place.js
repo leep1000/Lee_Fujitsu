@@ -13,7 +13,7 @@ import place11 from "./Image/place11.jpg";
 export let places = [
   {
     id: 1,
-    name: "bedroom",
+    name: "Bedroom",
     image: place1,
   },
   {
@@ -28,17 +28,17 @@ export let places = [
   },
   {
     id: 4,
-    name: "universe",
+    name: "Universe",
     image: place4,
   },
   {
     id: 5,
-    name: "the beach",
+    name: "the Beach",
     image: place5,
   },
   {
     id: 6,
-    name: "cat restaurant",
+    name: "Cat restaurant",
     image: place6,
   },
   {
@@ -48,22 +48,22 @@ export let places = [
   },
   {
     id: 8,
-    name: "the moon",
+    name: "the Moon",
     image: place8,
   },
   {
     id: 9,
-    name: "Apple headquarter",
+    name: "Apple Headquarter",
     image: place9,
   },
   {
     id: 10,
-    name: "heart",
+    name: "Heart",
     image: place10,
   },
   {
     id: 11,
-    name: "disneyland",
+    name: "Disneyland",
     image: place11,
   },
 ];
