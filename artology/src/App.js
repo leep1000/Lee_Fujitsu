@@ -59,7 +59,11 @@ function App() {
         <Arrow />
       </header>
       <main>
-        <div id="artist-studio" className="item-container">
+        <div
+          id="artist-studio"
+          aria-label="artist-studio"
+          className="item-container"
+        >
           <RandomItem
             item={item1}
             getRandomItem={() => getRandomItem1(adjectives)}

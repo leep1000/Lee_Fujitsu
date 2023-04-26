@@ -18,7 +18,11 @@ function Arrow() {
   };
 
   return (
-    <div className="arrow-container" onClick={handleClick}>
+    <div
+      className="arrow-container"
+      aria-label="scroll-down-arrow"
+      onClick={handleClick}
+    >
       <i className="arrow-down" />
     </div>
   );
