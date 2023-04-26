@@ -13,18 +13,21 @@
   }
 
 .nav-bar {
-  margin-left: 150px;
+  /* margin-left: 150px; */
+  /* margin: 0px 200px; */
   padding-top: 100px; 
   padding-bottom: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
   background-color: var(--white);
   color: var(--black);
   font-family: var(--font1);
-  font-size: 20px; 
+  font-size: 25px; 
   position: fixed;
   top: 0;
-  left: 0;
-  width: 80%;
-  z-index: 1;
+  max-width: 70%;
+  width: 100%;
+  z-index: 2;
 }
 
 .nav-bar li:nth-of-type(3) {
