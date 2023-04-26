@@ -1,5 +1,6 @@
 import React from "react";
 import "./Navbar.css";
+import logo from "../../RandomItem/Image/logo.jpg";
 
 function Navbar() {
   function handleClick(event, id) {
@@ -32,7 +33,7 @@ function Navbar() {
             className="nav-link"
             onClick={(e) => handleClick(e, "top-of-page")}
           >
-            Logo
+            <img src={logo} alt="Logo" className="logo-img"/>
           </a>
         </li>
         <li>
