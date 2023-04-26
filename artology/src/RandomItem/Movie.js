@@ -70,12 +70,12 @@ export let movies = [
   },
   {
     id: 12,
-    title: "Her",
+    title: "Spirited Away",
     image: movie12,
   },
   {
     id: 13,
-    title: "A Clockwork Orange",
+    title: "V for Vendetta",
     image: movie13,
   },
 ];

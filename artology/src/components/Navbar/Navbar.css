@@ -40,6 +40,7 @@
   list-style: none;
   display: flex;
   justify-content: space-between;
+  align-items:flex-end;
 }
 
 .nav-bar li {
@@ -58,6 +59,12 @@
 .nav-bar li:hover {
   color:var(--pink);
   text-decoration: underline;
+}
+
+.logo-img {
+  width: 247.4px;
+  height: 50px;
+
 }
 
 
