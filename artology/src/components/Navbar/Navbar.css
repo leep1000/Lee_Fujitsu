@@ -1,22 +1,31 @@
-@import url("https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@200&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600&display=swap');
 
 :root {
-  --black: black;
-  --grey: #333;
-  --white: white;
-  --font1: "Tilt Prism", sans-serif;
-  --font2: "Chivo Mono", monospace;
-}
+    --white: #FEFBFB; 
+    --black: #2D2125; 
+    --pink: #EE6A50; 
+    --blue: #114B5F; 
+    --brown: #DCC4A9;
+    --font1:'Comfortaa'; 
+    --font2: 'Chivo Mono', monospace;
+  }
 
 .nav-bar {
-  background-color: var(--black);
-  font-family: var(--font2);
+  margin: 120px;
+  background-color: var(--white);
+  color: var(--black);
+  font-family: var(--font1);
+  font-size: 20px; 
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 80%;
   z-index: 1;
+}
+
+.nav-bar li:nth-of-type(3) {
+  color: var(--blue);
 }
 
 .nav-bar ul {
@@ -33,12 +42,16 @@
 
 .nav-bar a {
   display: block;
-  color: #fff;
+  color: (var(--white));
   text-decoration: none;
   padding: 10px;
   transition: background-color 0.3s ease;
 }
 
-.nav-bar a:hover {
-  background-color: #555;
+.nav-bar li:hover {
+  color:var(--pink);
+  text-decoration: underline;
 }
+
+
+

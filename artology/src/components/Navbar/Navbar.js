@@ -7,7 +7,7 @@ function Navbar() {
       <ul>
         <li>Artist Studio</li>
         <li>Science Lab</li>
-        <li>Logo</li>
+        <li>BOOT TRIP</li>
         <li>Music Massage</li>
         <li>Code Play</li>
       </ul>
