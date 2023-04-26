@@ -9,7 +9,7 @@ function Arrow() {
     const nextSection = sections.find((section) => {
       const sectionTop =
         section.getBoundingClientRect().top + currentScrollPosition;
-      return sectionTop > currentScrollPosition;
+      return sectionTop > currentScrollPosition + 1;
     });
 
     if (nextSection) {

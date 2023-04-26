@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import React from "react";
 import Navbar from "./components/Navbar/Navbar";
 import RandomItem from "./components/RandomItem/index";
+import Meditation from "./components/Meditation/Meditation";
 import { adjectives } from "./RandomItem/Adjective";
 import { movies } from "./RandomItem/Movie";
 import { places } from "./RandomItem/Place";
@@ -96,7 +97,7 @@ function App() {
         <Arrow />
       </header>
       <main>
-        <div ClassName="frontpage-container">
+        <div className="frontpage-container">
           <FrontImage src={FrontImage} />
         </div>
         <section
@@ -124,6 +125,13 @@ function App() {
               getRandomItem={() => getRandomItem3(places)}
             />
           </div>
+        </section>
+        <section
+          id="meditation"
+          aria-label="meditation"
+          className="scroll-section"
+        >
+          <Meditation />
         </section>
       </main>
     </div>
