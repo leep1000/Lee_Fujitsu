@@ -1,3 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600&display=swap');
+
+:root {
+    --white: #FFFFFF; 
+    --black: #2D2125; 
+    --pink: #EE6A50; 
+    --blue: #114B5F; 
+    --brown: #DCC4A9;
+    --font1:'Comfortaa'; 
+    --font2: 'Chivo Mono', monospace;
+}
+
 .arrow-container {
   position: fixed;
   bottom: 20px;
@@ -8,7 +21,7 @@
 }
 
 .arrow-down {
-  border: solid #63959b;
+  border: solid  var(--blue);
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 5px;
