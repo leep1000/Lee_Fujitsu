@@ -6,7 +6,7 @@ import frontpage from "./frontpage.jpg";
 function FrontImage() {
   return (
     <div>
-      <img src={frontpage} alt="Swimming Guy"/>
+      <img name="frontimage" src={frontpage} alt="Swimming Guy"/>
     </div>
   );
 }

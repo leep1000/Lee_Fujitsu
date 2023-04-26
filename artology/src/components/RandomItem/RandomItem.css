@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600&display=swap');
 
 :root {
-    --white: #FEFBFB; 
+    --white: #FFFFFF; 
     --black: #2D2125; 
     --pink: #EE6A50; 
     --blue: #114B5F; 
@@ -21,12 +21,12 @@
   width: 100%;
   margin: 0 auto;
   padding: 0 0 50px 0;
-  background-color: #f5f5f5;
+  background-color: var(--white);
 }
 
 img {
-  width: 50%;
-  height: 50%;
+  width: 80%;
+  height: 80%;
   object-fit: contain;
 }
 
@@ -43,4 +43,8 @@ button {
 
 button:hover {
   background-color: var(--pink);
+}
+
+.random-item-section {
+  background-color: var(--white);
 }

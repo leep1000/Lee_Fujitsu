@@ -104,11 +104,12 @@ function App() {
           aria-label="artist-studio"
           className="item-container"
         >
+        <div className="question-container">
           <RandomQuestion
             question={question}
             getRandomQuestion={() => getRandomQuestion(questions)}
-          />
-
+          /> 
+          </div>
           <div className="item-container">
             <RandomItem
               item={item1}
