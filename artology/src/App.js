@@ -102,7 +102,7 @@ function App() {
         <section
           id="artist-studio"
           aria-label="artist-studio"
-          className="item-container"
+          className="artist-studio"
         >
         <div className="question-container">
           <RandomQuestion
