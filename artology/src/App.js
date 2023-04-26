@@ -7,9 +7,9 @@ import { adjectives } from "./RandomItem/Adjective";
 import { movie } from "./RandomItem/Movie";
 import { places } from "./RandomItem/Place";
 import { questions } from "./RandomItem/Question";
+import Arrow from "./components/Arrow";
 import FrontImage from "./components/FrontImage/FrontImage";
 import RandomQuestion from "./components/RandomQuestion";
-
 
 function App() {
   const [item1, setItem1] = useState({});
@@ -91,11 +91,17 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
+      <header id="top-of-page" className="App-header">
         <Navbar />
+        <Arrow />
       </header>
       <main>
-      
+        <div
+          id="artist-studio"
+          aria-label="artist-studio"
+          className="item-container"
+        >
+   
         <div ClassName="frontpage-container">
         <FrontImage src={FrontImage}/>
         </div>
@@ -106,6 +112,7 @@ function App() {
         />
         
         <div className="item-container">
+
           <RandomItem
             item={item1}
             getRandomItem={() => getRandomItem1(adjectives)}

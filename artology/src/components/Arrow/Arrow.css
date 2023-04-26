@@ -1,0 +1,17 @@
+.arrow-container {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  z-index: 10;
+}
+
+.arrow-down {
+  border: solid #63959b;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 5px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}

@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600&display=swap');
 
 :root {
+
     --white: #FEFBFB; 
     --black: #2D2125; 
     --pink: #EE6A50; 
@@ -40,13 +41,14 @@
   margin: 0 10px;
 }
 
-.nav-bar a {
+.nav-link {
   display: block;
   color: (var(--white));
   text-decoration: none;
   padding: 10px;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
+
 
 .nav-bar li:hover {
   color:var(--pink);
