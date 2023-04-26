@@ -3,10 +3,10 @@ import { useState, useEffect } from "react";
 import React from "react";
 import Navbar from "./components/Navbar/Navbar";
 import RandomItem from "./components/RandomItem/index";
-import {adjectives} from "./RandomItem/Adjective";
-import {movie} from "./RandomItem/Movie";
-import {places} from "./RandomItem/Place";
-import {questions} from "./RandomItem/Question";
+import { adjectives } from "./RandomItem/Adjective";
+import { movies } from "./RandomItem/Movie";
+import { places } from "./RandomItem/Place";
+import { questions } from "./RandomItem/Question";
 import Arrow from "./components/Arrow";
 import FrontImage from "./components/FrontImage/FrontImage";
 import RandomQuestion from "./components/RandomQuestion";
@@ -84,7 +84,7 @@ function App() {
 
   useEffect(() => {
     getRandomItem1(adjectives);
-    getRandomItem2(movie);
+    getRandomItem2(movies);
     getRandomItem3(places);
     getRandomQuestion(questions);
   }, []);
@@ -104,11 +104,12 @@ function App() {
           aria-label="artist-studio"
           className="item-container"
         >
+        <div className="question-container">
           <RandomQuestion
             question={question}
             getRandomQuestion={() => getRandomQuestion(questions)}
-          />
-
+          /> 
+          </div>
           <div className="item-container">
             <RandomItem
               item={item1}
@@ -116,7 +117,7 @@ function App() {
             />
             <RandomItem
               item={item2}
-              getRandomItem={() => getRandomItem2(movie)}
+              getRandomItem={() => getRandomItem2(movies)}
             />
             <RandomItem
               item={item3}

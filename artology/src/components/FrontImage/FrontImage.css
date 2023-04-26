@@ -1,5 +1,9 @@
 .front-image-container {
     margin: 200px;
+    width: 50%;
+    max-width: 1000px;
+    margin-top: 200px;
+    height: auto;
     position: relative;
 }
 
@@ -46,3 +50,4 @@
         transform: translateX(0);
     }
 }
+
