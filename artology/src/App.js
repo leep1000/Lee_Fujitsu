@@ -66,11 +66,11 @@ function App() {
     console.log("item3");
     return randomItem;
   }
-  
+
   function getRandomQuestion(array) {
     let randomNumber = Math.floor(Math.random() * array.length);
     let randomQuestion = array[randomNumber];
-    // we want to check that the question is not the same as the previous 
+    // we want to check that the question is not the same as the previous
     while (randomQuestion === previousQuestion) {
       randomNumber = Math.floor(Math.random() * array.length);
       randomQuestion = array[randomNumber];
@@ -96,36 +96,34 @@ function App() {
         <Arrow />
       </header>
       <main>
-        <div
+        <div ClassName="frontpage-container">
+          <FrontImage src={FrontImage} />
+        </div>
+        <section
           id="artist-studio"
           aria-label="artist-studio"
           className="item-container"
         >
-   
-        <div ClassName="frontpage-container">
-        <FrontImage src={FrontImage}/>
-        </div>
-        
-        <RandomQuestion 
-          question={question}
-          getRandomQuestion={ () => getRandomQuestion(questions)}
-        />
-        
-        <div className="item-container">
+          <RandomQuestion
+            question={question}
+            getRandomQuestion={() => getRandomQuestion(questions)}
+          />
 
-          <RandomItem
-            item={item1}
-            getRandomItem={() => getRandomItem1(adjectives)}
-          />
-          <RandomItem
-            item={item2}
-            getRandomItem={() => getRandomItem2(movie)}
-          />
-          <RandomItem
-            item={item3}
-            getRandomItem={() => getRandomItem3(places)}
-          />
-        </div>
+          <div className="item-container">
+            <RandomItem
+              item={item1}
+              getRandomItem={() => getRandomItem1(adjectives)}
+            />
+            <RandomItem
+              item={item2}
+              getRandomItem={() => getRandomItem2(movie)}
+            />
+            <RandomItem
+              item={item3}
+              getRandomItem={() => getRandomItem3(places)}
+            />
+          </div>
+        </section>
       </main>
     </div>
   );

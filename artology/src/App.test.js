@@ -15,5 +15,5 @@ test("Does the scroll arrow appear on page and scroll to next section", () => {
   // We expect the next section (artist's studio) to be in view
   // uses the aria label to find the next section
   const nextSection = screen.getByLabelText("artist-studio");
-  expect(nextSection).toBeInTheDocument();
+  expect(nextSection).toBeVisible();
 });
