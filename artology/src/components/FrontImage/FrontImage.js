@@ -1,12 +1,14 @@
 import React from "react";
 import "./FrontImage.css";
-import frontpage from "./frontpage.jpg";
+import frontpage1 from "../../RandomItem/Image/frontpage1.png";
+import frontpage2 from "../../RandomItem/Image/frontpage2.jpg";
 
 
 function FrontImage() {
   return (
-    <div>
-      <img src={frontpage} alt="Swimming Guy"/>
+    <div className="front-image-container">
+      <img src={frontpage1} alt="Swimming Guy"/>
+      <img src={frontpage2} alt="Waves in water"/>
     </div>
   );
 }

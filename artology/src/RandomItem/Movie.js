@@ -12,7 +12,7 @@ import movie11 from "./Image/movie11.jpg"
 import movie12 from "./Image/movie12.jpg"
 import movie13 from "./Image/movie13.jpg"
 
-export let movie = [
+export let movies = [
   {
     id: 1,
     name: "Titanic",
