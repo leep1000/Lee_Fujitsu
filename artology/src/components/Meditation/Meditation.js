@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import React from "react";
 import MusicButton from "./MusicButton";
 import BreathingButton from "./BreathingButton";
+import Transcript from "./Transcript";
 /*
 I want to make component that will be a section of the webpage dedicated to a meditating activity
 I want to have a button that will generate a random meditation activity
@@ -21,34 +22,12 @@ function Meditation() {
       </h3>
       <MusicButton />
       <BreathingButton />
-      <p>a</p>
-      <p>a</p>
-      <p>a</p>
-      <p>a</p>
-      <p>a</p>
-      <p>a</p>
-      <p>a</p>
-      <p>a</p>
-      <p>a</p>
-      <p>a</p>
-      <p>a</p>
-      <p>a</p>
-      <p>a</p>
-      <p>a</p>
-      <p>a</p>
-      <p>a</p>
-      <p>a</p>
-      <p>a</p>
-      <p>a</p>
-      <p>a</p>
-      <p>a</p>
-      <p>a</p>
-      <p>a</p>
-      <p>a</p>
-      <p>a</p>
-      <p>a</p>
-      <p>a</p>
-      <p>a</p>
+      <Transcript />
+      <img
+        src="https://media2.giphy.com/media/yvLgbrii0xnLpG1TT2/200.webp?cid=ecf05e47gga6crcme1la5z719y8wb93ick2fs9ef2z5vx6pw&ep=v1_gifs_search&rid=200.webp&ct=g"
+        alt="meditation-gif"
+        aria-label="meditation-gif"
+      />
     </section>
   );
 }

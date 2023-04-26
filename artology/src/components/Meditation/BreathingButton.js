@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Music from "./music.mp3";
+import MeditationAudio from "./MeditationAudio.wav";
 
 /*
 In this updated code, we've done the following:
@@ -14,7 +14,7 @@ Now, when you move the slider, the volume of the audio should change accordingly
 function BreathingButton() {
   const [isPlaying, setIsPlaying] = useState(false);
   const [volume, setVolume] = useState(1);
-  const [audio] = useState(new Audio(Music));
+  const [audio] = useState(new Audio(MeditationAudio));
 
   useEffect(() => {
     isPlaying ? audio.play() : audio.pause();
