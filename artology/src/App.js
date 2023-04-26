@@ -8,18 +8,30 @@ import { movie } from "./RandomItem/Movie";
 import { places } from "./RandomItem/Place";
 import { questions } from "./RandomItem/Question";
 import Arrow from "./components/Arrow";
+import FrontImage from "./components/FrontImage/FrontImage";
+import RandomQuestion from "./components/RandomQuestion";
 
 function App() {
   const [item1, setItem1] = useState({});
   const [item2, setItem2] = useState({});
   const [item3, setItem3] = useState({});
+  const [question, setQuestion] = useState({});
+
+  let previousItem1 = null;
+  let previousItem2 = null;
+  let previousItem3 = null;
+  let previousQuestion = null;
 
   function getRandomItem1(array) {
     let randomNumber = Math.floor(Math.random() * array.length);
     let randomItem = array[randomNumber];
-    if (randomItem === item1) {
-      getRandomItem1(array);
+    // we want to check that the item is not the same as the previous item
+    while (randomItem === previousItem1) {
+      randomNumber = Math.floor(Math.random() * array.length);
+      randomItem = array[randomNumber];
     }
+    // then we set the previous item to the current item
+    previousItem1 = randomItem;
     setItem1(randomItem);
     console.log("item1");
     return randomItem;
@@ -28,6 +40,13 @@ function App() {
   function getRandomItem2(array) {
     let randomNumber = Math.floor(Math.random() * array.length);
     let randomItem = array[randomNumber];
+    // we want to check that the item is not the same as the previous item
+    while (randomItem === previousItem2) {
+      randomNumber = Math.floor(Math.random() * array.length);
+      randomItem = array[randomNumber];
+    }
+    // then we set the previous item to the current item
+    previousItem2 = randomItem;
     setItem2(randomItem);
     console.log("item2");
     return randomItem;
@@ -37,19 +56,37 @@ function App() {
     let randomNumber = Math.floor(Math.random() * array.length);
     let randomItem = array[randomNumber];
     // we want to check that the item is not the same as the previous item
-    // if it is the same, we want to call the function again
-    if (randomItem === item3) {
-      getRandomItem3(array);
+    while (randomItem === previousItem3) {
+      randomNumber = Math.floor(Math.random() * array.length);
+      randomItem = array[randomNumber];
     }
+    // then we set the previous item to the current item
+    previousItem3 = randomItem;
     setItem3(randomItem);
     console.log("item3");
     return randomItem;
+  }
+  
+  function getRandomQuestion(array) {
+    let randomNumber = Math.floor(Math.random() * array.length);
+    let randomQuestion = array[randomNumber];
+    // we want to check that the question is not the same as the previous 
+    while (randomQuestion === previousQuestion) {
+      randomNumber = Math.floor(Math.random() * array.length);
+      randomQuestion = array[randomNumber];
+    }
+    // then we set the previous question to the current question
+    previousQuestion = randomQuestion;
+    setQuestion(randomQuestion);
+    console.log("question");
+    return randomQuestion;
   }
 
   useEffect(() => {
     getRandomItem1(adjectives);
     getRandomItem2(movie);
     getRandomItem3(places);
+    getRandomQuestion(questions);
   }, []);
 
   return (
@@ -64,6 +101,18 @@ function App() {
           aria-label="artist-studio"
           className="item-container"
         >
+   
+        <div ClassName="frontpage-container">
+        <FrontImage src={FrontImage}/>
+        </div>
+        
+        <RandomQuestion 
+          question={question}
+          getRandomQuestion={ () => getRandomQuestion(questions)}
+        />
+        
+        <div className="item-container">
+
           <RandomItem
             item={item1}
             getRandomItem={() => getRandomItem1(adjectives)}

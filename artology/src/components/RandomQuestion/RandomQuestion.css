@@ -1,0 +1,10 @@
+.random-question-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 0 50px 0;
+    background-color: #f5f5f5;
+  }
