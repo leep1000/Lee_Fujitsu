@@ -7,7 +7,9 @@ import { adjectives } from "./RandomItem/Adjective";
 import { movie } from "./RandomItem/Movie";
 import { places } from "./RandomItem/Place";
 import { questions } from "./RandomItem/Question";
+import FrontImage from "./components/FrontImage/FrontImage";
 import RandomQuestion from "./components/RandomQuestion";
+
 
 function App() {
   const [item1, setItem1] = useState({});
@@ -93,10 +95,16 @@ function App() {
         <Navbar />
       </header>
       <main>
+      
+        <div ClassName="frontpage-container">
+        <FrontImage src={FrontImage}/>
+        </div>
+        
         <RandomQuestion 
           question={question}
           getRandomQuestion={ () => getRandomQuestion(questions)}
         />
+        
         <div className="item-container">
           <RandomItem
             item={item1}
