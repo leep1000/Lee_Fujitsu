@@ -5,6 +5,7 @@
 .nav-bar {
   /* margin-left: 150px; */
   /* margin: 0px 200px; */
+  margin: 0px 0px;
   padding-top: 100px; 
   padding-bottom: 30px;
   /* padding-left: 50px;
@@ -24,6 +25,7 @@
   margin: 0 auto; /* center horizontally */
   display: flex; /* set display property to flex */
   align-items: center;
+  justify-content: center;
 }
 
 .nav-bar li:nth-of-type(3) {
