@@ -82,10 +82,6 @@ test("Does the get random item button change image and text", () => {
   
   }); 
   
-  
-
-
-  
 
   test("Does the show transcript button work", () => {  
     render(<Transcript />);
