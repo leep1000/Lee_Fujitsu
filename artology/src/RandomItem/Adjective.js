@@ -14,32 +14,32 @@ import adj12 from "./Image/adj12.jpeg";
 export let adjectives = [
   {
     id: 1,
-    name: "Surreal",
+    name: "a style of Surreal",
     image: adj1,
   },
   {
     id: 2,
-    name: "Melancholy",
+    name: "melancholy",
     image: adj2,
   },
   {
     id: 3,
-    name: "Joyous",
+    name: "a sense of joyfulness",
     image: adj3,
   },
   {
     id: 4,
-    name: "Funny",
+    name: "a sense of humour",
     image: adj4,
   },
   {
     id: 5,
-    name: "Scary",
+    name: "Horror",
     image: adj5,
   },
   {
     id: 6,
-    name: "Relaxing",
+    name: "Relaxation",
     image: adj6,
   },
   {
@@ -49,27 +49,27 @@ export let adjectives = [
   },
   {
     id: 8,
-    name: "Lazy",
+    name: "feeling lazy",
     image: adj8,
   },
   {
     id: 9,
-    name: "Smart",
+    name: "being smart",
     image: adj9,
   },
   {
     id: 10,
-    name: "Artistic",
+    name: "creativity",
     image: adj10,
   },
   {
     id: 11,
-    name: "Loved",
+    name: "a feeling of love",
     image: adj11,
   },
   {
     id: 12,
-    name: "Emotional",
+    name: "sensational",
     image: adj12,
   },
 ];
