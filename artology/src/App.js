@@ -111,7 +111,7 @@ function App() {
               getRandomQuestion={() => getRandomQuestion(questions)}
             />
           </div>
-          <div dataclassName="item-container">
+          <div dataclassName="item-container" className="item-container">
             <RandomItem
               item={item1}
               getRandomItem={() => getRandomItem1(adjectives)}

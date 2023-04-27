@@ -43,4 +43,6 @@
 
 .artist-studio {
   margin-top: 500px;
+  display: flex;
+  flex-direction: column;
 }
