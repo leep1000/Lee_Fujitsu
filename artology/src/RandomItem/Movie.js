@@ -65,17 +65,17 @@ export let movies = [
   },
   {
     id: 11,
-    title: "Laland",
+    name: "Laland",
     image: movie11,
   },
   {
     id: 12,
-    title: "Spirited Away",
+    name: "Spirited Away",
     image: movie12,
   },
   {
     id: 13,
-    title: "V for Vendetta",
+    name: "V for Vendetta",
     image: movie13,
   },
 ];
