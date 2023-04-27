@@ -38,7 +38,7 @@ function Meditation() {
       <MusicButton />
       <BreathingButton />
       <Transcript />
-      <img src={Wave} alt="wave" className="wave" />
+      {/* <img src={Wave} alt="wave" className="wave" /> */}
     </section>
   );
 }
