@@ -11,13 +11,14 @@ function Navbar() {
   }
 
   return (
-    <nav className="nav-bar">
+    <nav className="nav-bar" aria-label="nav-bar">
       <ul>
         <li>
           <a
             href="#artist-studio"
             className="nav-link"
             onClick={(e) => handleClick(e, "artist-studio")}
+            data-testid="artist-studio-link" // added for testing
           >
             Artist Studio
           </a>
@@ -33,7 +34,7 @@ function Navbar() {
             className="nav-link"
             onClick={(e) => handleClick(e, "top-of-page")}
           >
-            <img src={logo} alt="Logo" className="logo-img"/>
+            <img src={logo} alt="Logo" className="logo-img" />
           </a>
         </li>
         <li>
