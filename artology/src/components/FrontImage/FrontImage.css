@@ -18,7 +18,8 @@
     width: 40%;
     height: auto;
     text-align: center; 
-    /* margin-left: 100px; */
+    margin-top:100px;
+    margin-bottom: 100px;
 }
 
 .front-image-container img:first-child {

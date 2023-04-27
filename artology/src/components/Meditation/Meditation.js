@@ -5,6 +5,8 @@ import BreathingButton from "./BreathingButton";
 import Transcript from "./Transcript";
 import Wave from "./wave.gif";
 import "./Meditation.css";
+import voice from "./voice.png";
+import music from "./music.png";
 
 /*
 I want to make component that will be a section of the webpage dedicated to a meditating activity
@@ -30,13 +32,13 @@ function Meditation() {
       aria-label="meditation-section"
       // style={waveBackground}
     >
-      <h2>Music Massage</h2>
-      <h3>
-        Welcome, bootcampers, to the practice of meditation, a valuable tool for
-        managing the demands of your fast-paced learning environment.
-      </h3>
+      <h2>//Follow our guided meditation to relax</h2>
+      <div className="music-container">
+      <img src={music} alt="record" className="music-record"/>
       <MusicButton />
+      <img src={voice} alt="record player" className="voice-record"/>
       <BreathingButton />
+      </div>
       <Transcript />
       <img src={Wave} alt="wave" className="wave" />
     </section>
