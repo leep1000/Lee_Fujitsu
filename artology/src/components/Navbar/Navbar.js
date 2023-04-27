@@ -2,6 +2,7 @@ import React from "react";
 import "./Navbar.css";
 import logo from "../../RandomItem/Image/logo.jpg";
 
+
 function Navbar() {
   function handleClick(event, id) {
     event.preventDefault();

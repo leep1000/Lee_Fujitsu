@@ -91,7 +91,7 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
+    <div data-testid="app-component" className="App">
       <header id="top-of-page" className="App-header">
         <Navbar />
         <Arrow />
@@ -111,7 +111,7 @@ function App() {
               getRandomQuestion={() => getRandomQuestion(questions)}
             />
           </div>
-          <div className="item-container">
+          <div dataclassName="item-container">
             <RandomItem
               item={item1}
               getRandomItem={() => getRandomItem1(adjectives)}
