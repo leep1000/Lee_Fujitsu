@@ -16,18 +16,20 @@ test("Does the scroll arrow appear on page and scroll to next section", () => {
   // uses the aria label to find the next section
   const nextSection = screen.getByLabelText("artist-studio");
   expect(nextSection).toBeVisible();
+  // We expect the next section (artist's studio) to be in view
+  // // uses the aria label to find the next section
+  userEvent.click(arrow);
+  const nextNextSection = screen.getByLabelText("music-massage");
+  expect(nextNextSection).toBeVisible();
 });
 
 // check if the page loads up with everything in the right place
-test ("Does the page load up with the correct elements in the correct places", () => {  
+test("Does the page load up with the correct elements in the correct places", () => {
   render(<App />);
-
-
 
   // Navigation menu
   const navMenu = screen.getByRole("navigation");
   expect(navMenu).toBeInTheDocument();
-
 
   //first time using closest() it's a method that allows you to go up the DOM tree from a given element to find the nearest ancestor that matches a the selector
   // Music massage studio section
@@ -74,47 +76,46 @@ test ("Does the page load up with the correct elements in the correct places", (
 */
 
 // test if the get randomitem array1 button works when you click the corresponding change item button
-test("Does the get random item array1 button work", () => { 
+test("Does the get random item array1 button work", () => {
   render(<App />);
 
-  // Is the button on the page 
+  // Is the button on the page
   const button = screen.getByRole("button", { name: "Get Random Item 1" });
   expect(button).toBeInTheDocument();
 
-  // When clicked, does the button change the item 
+  // When clicked, does the button change the item
   // User clicks the button
   userEvent.click(button);
   // We expect the item to be different
   const item = screen.getByTestId("item1");
   expect(item).not.toHaveTextContent("item1");
-
-}); 
+});
 
 // test if the get randomitem array2 button works
 test("Does the get random item array2 button work", () => {
   render(<App />);
 
-  // Is the button on the page 
+  // Is the button on the page
   const button = screen.getByRole("button", { name: "Get Random Item 2" });
   expect(button).toBeInTheDocument();
 
-  // When clicked, does the button change the item 
+  // When clicked, does the button change the item
   // User clicks the button
   userEvent.click(button);
   // We expect the item to be different
   const item = screen.getByTestId("item2");
   expect(item).not.toHaveTextContent("item2");
-}); 
+});
 
 // test if the get randomitem array3 button works
 test("Does the get random item array3 button work", () => {
   render(<App />);
 
-  // Is the button on the page 
+  // Is the button on the page
   const button = screen.getByRole("button", { name: "Get Random Item 3" });
   expect(button).toBeInTheDocument();
 
-  // When clicked, does the button change the item 
+  // When clicked, does the button change the item
   // User clicks the button
   userEvent.click(button);
   // We expect the item to be different
@@ -122,21 +123,18 @@ test("Does the get random item array3 button work", () => {
   expect(item).not.toHaveTextContent("item3");
 });
 
-
 // test if the get random question is working when someone clicks the "new challenge" button
 test("Does the get random question button work", () => {
   render(<App />);
 
-  // Is the button on the page 
+  // Is the button on the page
   const button = screen.getByRole("button", { name: "New Challenge" });
   expect(button).toBeInTheDocument();
 
-  // When clicked, does the button change the item 
+  // When clicked, does the button change the item
   // User clicks the button
   userEvent.click(button);
   // We expect the item to be different
   const item = screen.getByTestId("question");
   expect(item).not.toHaveTextContent("question");
 });
-
-
