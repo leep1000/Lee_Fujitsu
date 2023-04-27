@@ -1,6 +1,7 @@
 import React from "react";
 import "./Navbar.css";
 
+
 function Navbar() {
   function handleClick(event, id) {
     event.preventDefault();
