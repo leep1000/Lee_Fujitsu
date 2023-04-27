@@ -40,7 +40,7 @@ function Meditation() {
       <BreathingButton />
       </div>
       <Transcript />
-      <img src={Wave} alt="wave" className="wave" />
+      {/* <img src={Wave} alt="wave" className="wave" /> */}
     </section>
   );
 }
