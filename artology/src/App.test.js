@@ -18,9 +18,26 @@ test("Does the scroll arrow appear on page and scroll to next section", () => {
   // uses the aria label to find the next section
   const nextSection = screen.getByLabelText("artist-studio");
   expect(nextSection).toBeVisible();
+  // We expect the next section (artist's studio) to be in view
+  // // uses the aria label to find the next section
+  userEvent.click(arrow);
+  const nextNextSection = screen.getByLabelText("music-massage");
+  expect(nextNextSection).toBeVisible();
 });
 
+// check if the page loads up with everything in the right place
+test("Does the page load up with the correct elements in the correct places", () => {
+  render(<App />);
 
+  // Navigation menu
+  const navMenu = screen.getByRole("navigation");
+  expect(navMenu).toBeInTheDocument();
+
+  //first time using closest() it's a method that allows you to go up the DOM tree from a given element to find the nearest ancestor that matches a the selector
+  // Music massage studio section
+  const musicMassage = screen.getByText("Music Massage");
+  expect(musicMassage).toBeInTheDocument();
+  expect(musicMassage.closest("section")).toHaveStyle({ marginTop: "0px" });
 
 
 // check if the page loads up with everything in the right place, added an ID to the div class name for it to work 👍
@@ -110,3 +127,4 @@ test("Does the scroll arrow appear on page and scroll to next section", () => {
     const transcript = screen.getByTestId("transcript-button");
     expect(transcript).not.toHaveTextContent("transcript");
   }); 
+
