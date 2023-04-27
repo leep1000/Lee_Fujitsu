@@ -12,9 +12,30 @@ function Arrow() {
       return sectionTop > currentScrollPosition + 1;
     });
 
-    if (nextSection) {
-      nextSection.scrollIntoView({ behavior: "smooth" });
-    }
+    // select the navbar
+    const navbar = document.querySelector(".nav-bar");
+
+    // get the styles applied to the navbar
+    const navbarStyles = window.getComputedStyle(navbar);
+
+    // calculate the total height of the navbar including padding
+    const navbarHeight =
+      navbar.offsetHeight +
+      parseInt(navbarStyles.paddingTop) + // convert paddingTop to integer
+      parseInt(navbarStyles.paddingBottom); // convert paddingBottom to integer
+
+    // calculate the absolute position of the target section with respect to the top of the body
+    const sectionPosition =
+      nextSection.getBoundingClientRect().top + currentScrollPosition;
+
+    // adjust the scroll position to account for the navbar height
+    const offsetPosition = sectionPosition - navbarHeight + 135; // adjust the extra offset here
+
+    // scroll the page to the calculated position
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: "smooth",
+    });
   };
 
   return (
