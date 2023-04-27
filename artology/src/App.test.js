@@ -25,6 +25,29 @@ test("Does the scroll arrow appear on page and scroll to next section", () => {
   expect(nextNextSection).toBeVisible();
 });
 
+test("Does the navbar appear on page and scroll to the correct section", () => {
+  // Mock the scrollIntoView method
+  const scrollIntoViewMock = jest.fn();
+  global.window.HTMLElement.prototype.scrollIntoView = scrollIntoViewMock;
+
+  render(<App />);
+
+  // Is the navBar on the page 👍
+  const navBar = screen.getByLabelText("nav-bar");
+  expect(navBar).toBeInTheDocument();
+
+  //is the artist studio link in the navBar 👍
+  const artistStudioLink = screen.getByTestId("artist-studio-link");
+  expect(artistStudioLink).toBeInTheDocument();
+
+  // When clicked, does the page scroll to the next section 👍
+  // User clicks the artistStudioLink
+  userEvent.click(artistStudioLink);
+
+  // We expect scrollIntoView to have been called
+  expect(scrollIntoViewMock).toHaveBeenCalled();
+});
+
 // check if the page loads up with everything in the right place
 test("Does the page load up with the correct elements in the correct places", () => {
   render(<App />);
@@ -110,8 +133,6 @@ test("Does the page load up with the correct elements in the correct places", ()
   });
   */
 
-
-  
   
 
   test("Does the show transcript button work", () => {  
