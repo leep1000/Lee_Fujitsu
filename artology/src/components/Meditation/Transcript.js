@@ -12,7 +12,7 @@ function Transcript() {
   return (
     <div>
       {/* Create a button to toggle the transcript visibility*/}
-      <button onClick={toggleTranscript}>
+      <button data-testid="transcript-button" onClick={toggleTranscript}>
         {showTranscript ? "Hide Transcript" : "Show Transcript"}
       </button>
       {showTranscript && (
