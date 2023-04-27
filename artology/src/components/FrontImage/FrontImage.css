@@ -2,7 +2,7 @@
     margin: 200px 0px ;
     /* width: 50%; */
     /* max-width: 1000px; */
-    margin-top: 200px;
+    margin-top: 100px;
     height: auto;
     position: relative;
     flex-direction: column;
@@ -18,8 +18,8 @@
     width: 40%;
     height: auto;
     text-align: center; 
-    margin-top:100px;
-    margin-bottom: 100px;
+    margin-top:130px;
+    margin-bottom: 0px;
 }
 
 .front-image-container img:first-child {

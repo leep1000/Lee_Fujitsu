@@ -1,7 +1,7 @@
 export let questions = [
     {
       id: 1,
-      question: "//Find the linkage between all:"
+      question: "//Find the common ground of:"
     },
     {
       id: 2,

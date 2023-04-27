@@ -31,7 +31,7 @@ function BreathingButton() {
   };
 
   return (
-    <div>
+    <div className="breath-button">
       <button onClick={toggle}>
         {isPlaying ? "Pause Meditation" : "Play Meditation"}
       </button>

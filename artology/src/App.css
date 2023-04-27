@@ -2,13 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600&display=swap');
 
 :root {
-    --white: #FFFFFF; 
-    --black: #2D2125; 
-    --pink: #EE6A50; 
-    --blue: #114B5F; 
-    --brown: #DCC4A9;
-    --font1:'Comfortaa'; 
-    --font2: 'Chivo Mono', monospace;
+  --white: #FFFFFF; 
+  --black: #2D2125; 
+  --pink: #EE6A50; 
+  --blue: #0d57be; 
+  --lightblue: #6bbcc5;
+  --brown: #DCC4A9;
+  --font1:'Comfortaa'; 
+  --font2: 'Chivo Mono', monospace;
 }
 
 .App {

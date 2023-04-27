@@ -10,13 +10,13 @@ function Transcript() {
   };
 
   return (
-    <div>
+    <div className="transcript-div">
       {/* Create a button to toggle the transcript visibility*/}
       <button data-testid="transcript-button" onClick={toggleTranscript}>
         {showTranscript ? "Hide Transcript" : "Show Transcript"}
       </button>
       {showTranscript && (
-        <div>
+        <div className="transcript-container">
           <p>
             Welcome. Today we are swapping the bootcamp for breathing, and
             swapping react for relaxing. Our days are packed with squats and

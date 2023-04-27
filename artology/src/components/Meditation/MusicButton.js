@@ -38,7 +38,7 @@ function MusicButton() {
   };
 
   return (
-    <div>
+    <div className="music-button">
       <button onClick={toggle}>
         {isPlaying ? "Pause Music" : "Play Music"}
       </button>

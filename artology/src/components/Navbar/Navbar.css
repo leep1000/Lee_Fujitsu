@@ -1,33 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600&display=swap');
 
-:root {
-
-    --white: #FFFFFF; 
-    --black: #2D2125; 
-    --pink: #EE6A50; 
-    --blue: #114B5F; 
-    --brown: #DCC4A9;
-    --font1:'Comfortaa'; 
-    --font2: 'Chivo Mono', monospace;
-  }
 
 .nav-bar {
   /* margin-left: 150px; */
   /* margin: 0px 200px; */
   padding-top: 100px; 
   padding-bottom: 30px;
-  padding-left: 50px;
-  padding-right: 50px;
+  /* padding-left: 50px;
+  padding-right: 50px; */
   background-color: var(--white);
   color: var(--black);
   font-family: var(--font1);
   font-size: 25px; 
   position: fixed;
   top: 0;
-  max-width: 70%;
   width: 100%;
-  z-index: 2;
+  z-index: 100;
+}
+
+.nav-container {
+  max-width: 70%;
+  margin: 0 auto; /* center horizontally */
+  display: flex; /* set display property to flex */
+  align-items: center;
 }
 
 .nav-bar li:nth-of-type(3) {
@@ -64,7 +60,10 @@
 .logo-img {
   width: 260px;
   height: 46px;
+  transition: all 0.2s ease-in-out; /* add transition for smooth animation */
 }
 
-
-
+.logo-img:hover {
+  width: 280px;
+  height: 52px;
+}

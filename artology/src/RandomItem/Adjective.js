@@ -14,7 +14,7 @@ import adj12 from "./Image/adj12.jpeg";
 export let adjectives = [
   {
     id: 1,
-    name: "a style of Surreal",
+    name: "a style of Surrealism",
     image: adj1,
   },
   {
@@ -24,7 +24,7 @@ export let adjectives = [
   },
   {
     id: 3,
-    name: "a sense of joyfulness",
+    name: "happiness",
     image: adj3,
   },
   {
@@ -34,12 +34,12 @@ export let adjectives = [
   },
   {
     id: 5,
-    name: "Horror",
+    name: "fear",
     image: adj5,
   },
   {
     id: 6,
-    name: "Relaxation",
+    name: "relaxation",
     image: adj6,
   },
   {

@@ -32,12 +32,16 @@ function Meditation() {
       aria-label="meditation-section"
       // style={waveBackground}
     >
-      <h2>//Follow our guided meditation to relax</h2>
+      <h2 className="meditation-title">{"//Follow our guided meditation to relax"}</h2>
       <div className="music-container">
-      <img src={music} alt="record" className="music-record"/>
-      <MusicButton />
-      <img src={voice} alt="record player" className="voice-record"/>
-      <BreathingButton />
+        <div className="img-row">
+          <img src={music} alt="record" className="music-record"/>
+          <img src={voice} alt="record player" className="voice-record"/>
+        </div>
+        <div className="button-row">
+          <MusicButton />
+          <BreathingButton />
+        </div>
       </div>
       <Transcript />
       {/* <img src={Wave} alt="wave" className="wave" /> */}

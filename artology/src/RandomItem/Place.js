@@ -13,12 +13,12 @@ import place11 from "./Image/place11.jpg";
 export let places = [
   {
     id: 1,
-    name: "Bedroom",
+    name: "bedroom",
     image: place1,
   },
   {
     id: 2,
-    name: "Yoga studio",
+    name: "yoga studio",
     image: place2,
   },
   {
@@ -33,12 +33,12 @@ export let places = [
   },
   {
     id: 5,
-    name: "the Beach",
+    name: "the beach",
     image: place5,
   },
   {
     id: 6,
-    name: "Cat restaurant",
+    name: "cat restaurant",
     image: place6,
   },
   {
@@ -53,12 +53,12 @@ export let places = [
   },
   {
     id: 9,
-    name: "Apple Headquarter",
+    name: "Apple headquarter",
     image: place9,
   },
   {
     id: 10,
-    name: "Heart",
+    name: "heart",
     image: place10,
   },
   {

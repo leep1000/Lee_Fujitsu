@@ -41,6 +41,7 @@ function Navbar() {
 
   return (
     <nav className="nav-bar" aria-label="nav-bar">
+    <div className="nav-container">
       <ul>
         <li>
           <a
@@ -81,6 +82,7 @@ function Navbar() {
           </a>
         </li>
       </ul>
+      </div>
     </nav>
   );
 }
