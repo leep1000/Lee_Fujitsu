@@ -10,6 +10,7 @@ import { questions } from "./RandomItem/Question";
 import Arrow from "./components/Arrow";
 import FrontImage from "./components/FrontImage/FrontImage";
 import RandomQuestion from "./components/RandomQuestion";
+import Meditation from "./components/Meditation/Meditation";
 
 function App() {
   const [item1, setItem1] = useState({});
@@ -104,11 +105,11 @@ function App() {
           aria-label="artist-studio"
           className="artist-studio"
         >
-        <div className="question-container">
-          <RandomQuestion
-            question={question}
-            getRandomQuestion={() => getRandomQuestion(questions)}
-          /> 
+          <div className="question-container">
+            <RandomQuestion
+              question={question}
+              getRandomQuestion={() => getRandomQuestion(questions)}
+            />
           </div>
           <div className="item-container">
             <RandomItem
@@ -124,6 +125,13 @@ function App() {
               getRandomItem={() => getRandomItem3(places)}
             />
           </div>
+        </section>
+        <section
+          id="music-massage"
+          aria-label="music-massage"
+          className="music-massage"
+        >
+          <Meditation />
         </section>
       </main>
     </div>
