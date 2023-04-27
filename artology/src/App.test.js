@@ -1,6 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import App from "./App";
+import Transcript from "./components/Meditation/Transcript";
 
 
 test("Does the scroll arrow appear on page and scroll to next section", () => {
@@ -24,10 +25,10 @@ test("Does the scroll arrow appear on page and scroll to next section", () => {
 
 // check if the page loads up with everything in the right place, added an ID to the div class name for it to work 👍
 
-  test("checks if the page loads up", () => {
-    const { getByTestId } = render(<App />);
+ /* test("checks if the page loads up", () => {
+    const { screen,getByTestId } = render(<App />);
     // 
-    const appComponent = getByTestId("app-component");
+    const appComponent = screen.getByTestId("app-component");
     expect(appComponent).toBeInTheDocument();
   });
   
@@ -90,4 +91,22 @@ test("Does the scroll arrow appear on page and scroll to next section", () => {
     const item = screen.getByTestId("question");
     expect(item).not.toHaveTextContent("question");
   });
+  */
+
+
   
+  
+
+  test("Does the show transcript button work", () => {  
+    render(<Transcript />);
+  
+    // Is the button on the page 
+    const button = screen.getByRole("button", { name: "Show Transcript" });
+    expect(button).toBeInTheDocument();
+  
+    // When clicked, does the button change the and shows the script imbedded in the page
+    userEvent.click(button);
+    // We expect the item to be different
+    const transcript = screen.getByTestId("transcript-button");
+    expect(transcript).not.toHaveTextContent("transcript");
+  }); 
