@@ -3,7 +3,7 @@ import React from "react";
 import MusicButton from "./MusicButton";
 import BreathingButton from "./BreathingButton";
 import Transcript from "./Transcript";
-import Wave from "./Wave";
+//import Wave from "./Wave";
 /*
 I want to make component that will be a section of the webpage dedicated to a meditating activity
 I want to have a button that will generate a random meditation activity
