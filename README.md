@@ -1,5 +1,5 @@
 ###
-🚀 Project Week in the School Of Code 🚀
+🚀 𝑷𝒓𝒐𝒋𝒆𝒄𝒕 𝑾𝒆𝒆𝒌 @ 𝑺𝒄𝒉𝒐𝒐𝒍 𝑶𝒇 𝑪𝒐𝒅𝒆 🚀
 
 Deployment:
  👉 https://lnkd.in/dJ3ZDP-u
