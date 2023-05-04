@@ -23,4 +23,4 @@ Let's ride the waves of inspiration, explore uncharted territories and emerge wi
 
 👩🏼‍🎨 👩🏻‍🚀 🧑🏻‍🔬 🕵🏿
 
-Meet the amazing and diverse team of Artology - Lee Palmer, Carrie Shen, Hildigunnur Sigvaldadóttir and Katim Touray! We are from the UK, Iceland and Hong Kong, all currently embarking on a 16-week coding bootcamp at the School of Code, where we are honing our skills our skills to become full-stack software developers. With a passion for teamwork and a hunger for knowledge, Artology is sailing full speed ahead into the world of wonders! 
+Meet the amazing team of Artology - Lee Palmer, Carrie Shen, Hildigunnur Sigvaldadóttir and Katim Touray! We are from the UK, Iceland and Hong Kong, all currently embarking on a 16-week coding bootcamp at the School of Code, where we are honing our skills to become full-stack software developers. With a passion for teamwork and a hunger for knowledge, Artology is sailing full speed ahead into the world of wonders! 
