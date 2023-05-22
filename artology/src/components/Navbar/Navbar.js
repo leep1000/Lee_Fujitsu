@@ -1,6 +1,5 @@
 import React from "react";
 import "./Navbar.css";
-import logo from "../../RandomItem/Image/logo.jpg";
 
 function Navbar() {
   function handleClick(event, id) {
@@ -41,47 +40,51 @@ function Navbar() {
 
   return (
     <nav className="nav-bar" aria-label="nav-bar">
-    <div className="nav-container">
-      <ul>
-        <li>
-          <a
-            href="#artist-studio"
-            className="nav-link"
-            onClick={(e) => handleClick(e, "artist-studio")}
-            data-testid="artist-studio-link" // added for testing
-          >
-            Artist Studio
-          </a>
-        </li>
-        <li>
-          <a href="#science-lab" className="nav-link">
-            Science Lab
-          </a>
-        </li>
-        <li>
-          <a
-            href="#top-of-page"
-            className="nav-link"
-            onClick={(e) => handleClick(e, "top-of-page")}
-          >
-            <img src={logo} alt="Logo" className="logo-img" />
-          </a>
-        </li>
-        <li>
-          <a
-            href="#music-massage"
-            className="nav-link"
-            onClick={(e) => handleClick(e, "music-massage")}
-          >
-            Music Massage
-          </a>
-        </li>
-        <li>
-          <a href="#code-play" className="nav-link">
-            Code Play
-          </a>
-        </li>
-      </ul>
+      <div className="nav-container">
+        <ul>
+          <li>
+            <a
+              href="#artist-studio"
+              className="nav-link"
+              onClick={(e) => handleClick(e, "artist-studio")}
+              data-testid="artist-studio-link" // added for testing
+            >
+              Introduction
+            </a>
+          </li>
+          <li>
+            <a
+              href="#science-lab"
+              className="nav-link"
+              onClick={(e) => handleClick(e, "fujitsu")}
+            >
+              Fujitsu
+            </a>
+          </li>
+          <li id="passion">
+            <a
+              href="#top-of-page"
+              className="nav-link"
+              onClick={(e) => handleClick(e, "top-of-page")}
+            >
+              Passion
+            </a>
+          </li>
+          <li>
+            <a
+              href="#music-massage"
+              className="nav-link"
+              onClick={(e) => handleClick(e, "music-massage")}
+            >
+              Value
+            </a>
+          </li>
+          <li>
+            <a href="#code-play" className="nav-link">
+              Conclusion
+            </a>
+          </li>
+        </ul>
       </div>
     </nav>
   );

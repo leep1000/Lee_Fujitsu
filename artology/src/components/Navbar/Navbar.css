@@ -1,19 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600&display=swap");
 
 .nav-bar {
   /* margin-left: 150px; */
   /* margin: 0px 200px; */
   margin: 0px 0px;
-  padding-top: 100px; 
+  padding-top: 100px;
   padding-bottom: 30px;
   /* padding-left: 50px;
   padding-right: 50px; */
   background-color: var(--white);
   color: var(--black);
   font-family: var(--font1);
-  font-size: 25px; 
+  font-size: 25px;
   position: fixed;
   top: 0;
   width: 100%;
@@ -38,11 +37,12 @@
   list-style: none;
   display: flex;
   justify-content: space-between;
-  align-items:flex-end;
+  align-items: flex-end;
 }
 
 .nav-bar li {
   margin: 0 10px;
+  transition: all 0.2s ease-in-out;
 }
 
 .nav-link {
@@ -53,19 +53,19 @@
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-
 .nav-bar li:hover {
-  color:var(--pink);
+  color: var(--pink);
   text-decoration: underline;
 }
 
-.logo-img {
-  width: 260px;
+#passion {
+  width: 120px;
   height: 46px;
+  font-weight: 900;
+  color: #d30909;
   transition: all 0.2s ease-in-out; /* add transition for smooth animation */
 }
 
-.logo-img:hover {
-  width: 280px;
-  height: 52px;
+li:hover {
+  transform: scale(1.25); /* increase size by 10% on hover */
 }
