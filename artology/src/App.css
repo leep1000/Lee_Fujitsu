@@ -1,15 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600&display=swap");
 
 :root {
-  --white: #FFFFFF; 
-  --black: #2D2125; 
-  --pink: #EE6A50; 
-  --blue: #0d57be; 
+  --white: #ffffff;
+  --black: #2d2125;
+  --pink: #ee6a50;
+  --blue: #0d57be;
   --lightblue: #6bbcc5;
-  --brown: #DCC4A9;
-  --font1:'Comfortaa'; 
-  --font2: 'Chivo Mono', monospace;
+  --brown: #dcc4a9;
+  --font1: "Comfortaa";
+  --font2: "Chivo Mono", monospace;
 }
 
 .App {
@@ -24,7 +24,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color:var(--white);
+  color: var(--white);
 }
 
 .App-link {
@@ -46,4 +46,19 @@
   /* margin-top: 200px; */
   display: flex;
   flex-direction: column;
+}
+
+#conclusion {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#conclusion img {
+  width: 68%;
+  height: 68%;
+  object-fit: contain;
 }

@@ -65,22 +65,17 @@ function Navbar() {
             <a
               href="#top-of-page"
               className="nav-link"
-              onClick={(e) => handleClick(e, "top-of-page")}
+              onClick={(e) => handleClick(e, "apprenticeship")}
             >
-              Passion
+              Apprenticeship
             </a>
           </li>
           <li>
             <a
-              href="#music-massage"
+              href="#code-play"
               className="nav-link"
-              onClick={(e) => handleClick(e, "music-massage")}
+              onClick={(e) => handleClick(e, "conclusion")}
             >
-              Value
-            </a>
-          </li>
-          <li>
-            <a href="#code-play" className="nav-link">
               Conclusion
             </a>
           </li>
