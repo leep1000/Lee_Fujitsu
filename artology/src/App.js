@@ -47,11 +47,7 @@ function App() {
           <div dataclassName="item-container" className="item-container">
             <FujitsuCard
               item={{ name: "Opportunities", image: portfolio }}
-              info={[
-                "Worldwide Business",
-                "Diverse Portfolio",
-                "Shaping the future with projects",
-              ]}
+              info={["Worldwide Business", "Diverse Portfolio"]}
             />
             <FujitsuCard
               item={{ name: "Fujitsu Way (和)", image: values }}
@@ -72,11 +68,7 @@ function App() {
           <div dataclassName="item-container" className="item-container">
             <FujitsuCard
               item={{ name: "Why Software", image: solutions }}
-              info={[
-                "How tech affects us",
-                "Learning new skills",
-                "Ability to make a difference",
-              ]}
+              info={["How tech affects us", "Ability to make a difference"]}
             />
             <FujitsuCard
               item={{ name: "Blended Learning", image: university }}

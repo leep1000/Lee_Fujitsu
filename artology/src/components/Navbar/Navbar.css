@@ -54,14 +54,6 @@
   text-decoration: underline;
 }
 
-#passion {
-  width: 120px;
-  height: 46px;
-  font-weight: 900;
-  color: #d30909;
-  transition: all 0.2s ease-in-out; /* add transition for smooth animation */
-}
-
 li:hover {
   transform: scale(1.2); /* increase size by 10% on hover */
 }
